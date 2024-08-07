@@ -4,6 +4,7 @@ import { SeedController } from './seed.controller';
 import { CarsModule } from '../cars/cars.module';
 import { BrandsModule } from 'src/brands/brands.module';
 
+// nest g res seed --no-spec Crear seed sin los test, se usa en desarrrollo para tener datos precargados
 @Module({
   controllers: [SeedController],
   providers: [SeedService],

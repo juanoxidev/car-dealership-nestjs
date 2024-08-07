@@ -9,3 +9,9 @@ Populate DB
 ```
 http://localhost:3000/seed
 ```
+
+Deploy Prod
+```
+yarn build 
+yarn start:prod
+```
