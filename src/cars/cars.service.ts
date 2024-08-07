@@ -10,21 +10,11 @@ export class CarsService {
 
 
   private cars:Car[] = [
-    {
-      id: uuid(),
-      brand: 'Toyota',
-      model: 'Corola'
-    },
-    {
-      id: uuid(),
-      brand: 'Honda',
-      model: 'Civic'
-    },
-    {
-      id: uuid(),
-      brand: 'Jeep',
-      model: 'Cherokee'
-    }
+    // {
+    //   id: uuid(),
+    //   brand: 'Toyota',
+    //   model: 'Corola'
+    // }
   ]
   
   findOneById(id: string) {
@@ -101,6 +91,10 @@ export class CarsService {
     const car: Car = this.findOneById(id);
 
     this.cars = this.cars.filter(carBD => carBD !== car);
+  }
+
+  fillCarsWithSeedData(cars:Car[]) {
+    this.cars = cars;
   }
   
 
